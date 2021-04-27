@@ -1,0 +1,115 @@
+.table-section {
+  .container {
+    margin: 0 auto;
+    padding-top: 37px;
+    width: 1760px;
+  }
+  .button {
+    display: flex;
+    align-items: center;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+  }
+  &__form-container {
+    margin-bottom: 48px;
+  }
+  .search-form {
+    position: relative;
+    display: inline-block;
+    &:first-child {
+      margin-right: 60px;
+    }
+    &__input {
+      border: none;
+      border-bottom: 1px solid #a5a5a5;
+      background-color: transparent;
+    }
+    &__button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+    .word-search {
+      width: 1436px;
+      padding: 14px 40px;
+    }
+    .date-search {
+      width: 260px;
+      padding: 14px 0;
+    }
+    .calendar-btn {
+      right: 0;
+    }
+  }
+  &__table-title-wrap {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+  }
+
+  &__table-name {
+    font-family: 'Aktiv Grotesk Corp Medium';
+    font-size: 24px;
+    line-height: 28.8px;
+  }
+  &__table-controls {
+    display: flex;
+    align-items: center;
+    button:not(:last-child) {
+      margin-right: 24px;
+    }
+  }
+  .table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    text-align: left;
+    &__head {
+      font-family: 'Aktiv Grotesk Corp Medium';
+    }
+    &__body {
+      &::before {
+        height: 27px;
+        display: table-row;
+        content: '';
+      }
+      .get-top-space {
+        td {
+          padding-top: 32px;
+        }
+      }
+    }
+    &__type-column {
+      width: 553px;
+    }
+    &__country-column {
+      width: 361px;
+    }
+    &__state-column {
+      width: 340px;
+    }
+    &__meeting-column {
+      width: 361px;
+    }
+    &__action-column {
+      width: 145px;
+    }
+    &__row {
+      td {
+        padding-bottom: 6px;
+        border-bottom: 1px solid #727272;
+      }
+    }
+    &__button {
+      .arrow-icon {
+        width: 24px;
+        height: 24px;
+        margin-left: 4px;
+        background-image: url(../../images/icons/arrow-right-down.svg);
+      }
+      &:hover .arrow-icon {
+        background-image: url(../../images/icons/arrow-right.svg);
+      }
+    }
+  }
+}

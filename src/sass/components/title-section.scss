@@ -1,0 +1,13 @@
+.title-section {
+  padding: 44px 80px;
+  background-image: url('../../images/title-section-back.png');
+  background-size: cover;
+  background-color: #004225;
+  &__title {
+    margin: 0;
+    font-size: 40px;
+    line-height: 48px;
+    font-family: 'Aktiv Grotesk Corp Medium';
+    color: #ffffff;
+  }
+}
